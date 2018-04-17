@@ -1,0 +1,26 @@
+#home-content .card .card-text {
+  font-size: 18px;
+}
+
+#home-content .card > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#home-content .card > a:hover {
+  color: #eee;
+}
+
+#home-content .card .notice-board-title {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+#home-content .card .notice-board-list {
+  line-height: 3;
+}
+
+#home-content .card .notice-board-list > a {
+  color: #fff;
+} 
