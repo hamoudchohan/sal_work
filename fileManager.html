@@ -28,7 +28,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
@@ -52,7 +52,7 @@
         </li>
 
 
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link" href="fileManager.html">
             <i class="fa fa-fw fa-file"></i>
             <span class="nav-link-text">File Manager</span>
@@ -171,133 +171,130 @@
         <li class="breadcrumb-item">
           <a href="index.html">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Home Page</li>
+        <li class="breadcrumb-item active">File Manager</li>
 
       </ol>
       <div class="row">
-        <div class="col-sm-2">
-
-          <div class="card text-white bg-info mb-2">
-            <a href="studenProfile.html">
-              <div class="card-body">
-                <h5 class="card-title float-right">
-                  <i class="fa fa-user fa-3x"></i>
-                </h5>
-                <p class="card-text">Student Profile</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="col-sm-2">
-
-          <div class="card text-white bg-info mb-2">
-            <a href="fileManager.html">
-              <div class="card-body">
-                <h5 class="card-title float-right">
-                  <i class="fa fa-file fa-3x"></i>
-                </h5>
-                <p class="card-text">File Manager</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="col-sm-2">
-
-          <div class="card text-white bg-info mb-2">
-            <a href="#">
-              <div class="card-body">
-                <h5 class="card-title float-right">
-                  <i class="fa fa-eye fa-3x"></i>
-                </h5>
-                <p class="card-text">View
-                  <br> Result</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="col-sm-6">
-
-          <div class="card text-white bg-info mb-2">
+        <div class="col-12">
+          <div class="card mb-5 p-3">
             <div class="card-body">
-              <div class="card-title notice-board-title">Notice Board</div>
-              <marquee direction="up" scrollamount="2">
-                <ol class="card-text notice-board-list">
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                  <a href="#">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  </a>
-                </ol>
-              </marquee>
+              <div class="row">
+                <h3>File Manager</h3>
+                <div class="col-sm-3 ml-auto">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="file name" aria-label="filename" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-search"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <input type="button" id="loadFileXml" class="btn btn-info" value="Upload File &#x2601;" onclick="document.getElementById('file').click();"
+                />
+                <input type="file" style="display:none;" id="file" name="file" />
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-sm-8">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>File</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="fileCb" id="fileCb">
+                        </td>
+                        <td>
+                          <i class="fa fa-file"></i>&nbsp; File name</td>
+                        <td>
+                          <button class="btn btn-danger">
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="fileCb" id="fileCb">
+                        </td>
+                        <td>
+                          <i class="fa fa-file"></i>&nbsp; File name</td>
+                        <td>
+                          <button class="btn btn-danger">
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="fileCb" id="fileCb">
+                        </td>
+                        <td>
+                          <i class="fa fa-file"></i>&nbsp; File name</td>
+                        <td>
+                          <button class="btn btn-danger">
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container-fluid-->
+  <!-- /.content-wrapper-->
+
+
+
+  <footer class="sticky-footer">
+    <div class="container">
+      <div class="text-center">
+        <small>Copyright © UMT-Student Portal FYP 2018.</small>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="teacherModal" tabindex="-1" role="dialog" aria-labelledby="teacherModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="teacherModalLabel">Advisor Detail:
+            <small>Teacher Name</small>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Details about project advisor will be displayed here
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
         </div>
       </div>
     </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
+  </div>
 
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © UMT-Student Portal FYP 2018.</small>
-        </div>
-      </div>
-    </footer>
-    <!-- Modal -->
-    <div class="modal fade" id="teacherModal" tabindex="-1" role="dialog" aria-labelledby="teacherModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="teacherModalLabel">Advisor Detail:
-              <small>Teacher Name</small>
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Details about project advisor will be displayed here
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/admin.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/admin.min.js"></script>
   </div>
 </body>
 
